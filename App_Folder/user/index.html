@@ -1,18 +1,54 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html>
 <head>
 <meta charset="utf-8">
 <title>無標題文件</title>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+$("#leftFrame_display").click(function(){
+
+var fs = parent.document.getElementsByTagName("frameset")[1];
+
+if($("#left_staus").val() == "打開"){
+
+$("#left_staus").val("關閉");
+closeFrameset();
+
+}else if($("#left_staus").val() == "關閉"){
+
+$("#left_staus").val("打開");
+openFrameset();
+}
+
+
+});                           
+
+});
+
+
+function closeFrameset(){
+var fs = parent.document.getElementsByTagName("frameset")[1];
+fs.cols = "0,*";
+$("#leftFrame_display").text("打開菜單");
+}
+
+function openFrameset(){
+var fs = parent.document.getElementsByTagName("frameset")[1];
+fs.cols = "202,*";
+$("#leftFrame_display").text("隱藏菜單");
+} 
+</script>
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 </head>
 
-<frameset cols="200,*" frameborder="NO" border="0" framespacing="0">
-    <frame src="nav.html" name="leftFrame" scrolling="NO" noresize title="leftFrame">
-    <frame src="main.html" name="mainFrame" title="mainFrame">
-</frameset>
+<body bgcolor="#663333">
+<span id="leftFrame_display" style="cursor:pointer; color:#063;">1隱藏菜單</span>
+<input type="hidden" name="left_staus" id="left_staus" value="打開">
 
-
-<noframes>
-<body>
 </body>
-</noframes>
 </html>
