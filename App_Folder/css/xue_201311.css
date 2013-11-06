@@ -1,0 +1,61 @@
+/**********************************************************************************************
+
+	Title: CSS for green-in-life
+	Author: Elmo Wu (by xuedesign studio)
+	Date: 2013 / 11   
+
+***********************************************************************************************
+		1 通用
+		2.首頁		
+***********************************************************************************************/
+
+/* 1. 通用 
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/
+body{
+	font-family:"微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
+	font-size:100%;
+	line-height:20px;
+	color:#565555}
+a:link {text-decoration:underline; color:#00adee}
+a:visited {text-decoration:underline; color:#8c8c8c}
+a:hover {text-decoration:none; color:#F50}
+form{margin:0; padding:0}
+image{border:0}
+
+.clean{ clear:both}
+.hidden{ display:none}
+
+/* 2. 首頁  
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/
+#bg { position: fixed; top: 0; left: 0; }
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
+#wrap{
+	display:block;
+	width:994px;
+	margin:0 auto}
+	
+/*2.4 完美底部佈局---------------------------*/
+html, body, #wrap {height: 100%;}
+body > #wrap {height: auto; min-height: 100%;}
+#main_content{padding-bottom:150px}
+.clearfix:after {content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+footer{ 
+    display:block;
+    position: relative;
+    width:100%;
+    background:#0C3;
+    margin-top: -150px;
+    height:150px}		
