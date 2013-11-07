@@ -13,7 +13,7 @@
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
 body{
-	background:url(../images/bg_site.png);
+	background:url(../images/bg_nav.png) repeat-y;
 	font-family:"新細明體","PMingLiU", Arial, Helvetica, sans-serif;
 	font-size:100%;
 	line-height:20px;
@@ -30,7 +30,7 @@ image{border:0}
 /* 2. 登入頁  
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
-#wrap{ display:block; width:200px; border-right:2px solid #FFF}
+#wrap{ display:block; position:relative; width:202px}
 h1{ 
     display:block; 
     width:150px; 
@@ -38,7 +38,7 @@ h1{
 	margin:10px auto 35px auto; 
     background: url(../images/logo_nav.png) no-repeat; 
     text-indent:-9999px}
-nav{ display:block; margin-bottom:90px}
+nav{ display:block; margin-bottom:70px}
 nav a:link, nav a:visited{
 	display:block;
 	width:125px;
@@ -73,6 +73,10 @@ nav a:hover{
 	text-shadow: none;
 	box-shadow: none}	
 .copyright{
+	display:block;
+	position:absolute;
+	top:580px;
+	left:15px;
 	font-size:0.813em; 
 	line-height:22px; 
-	text-align:center}		
+	text-align:center}			
