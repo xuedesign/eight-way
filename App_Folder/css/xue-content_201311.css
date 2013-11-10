@@ -80,9 +80,32 @@ a.btn_red:hover{
 	background-color: #dc454c; 
 	color:#fff;
 	text-decoration:none;
-	border:1px solid #aa0e15}			
+	border:1px solid #aa0e15}
 
-/* 2. 登入頁  
+				
+
+
+/* 2. 內頁板型  
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
-
+.main_content{
+	display:block;
+	width:93%;
+	min-height:510px;
+	margin:30px auto;
+	background:url(../images/bg_content-logo.png) right bottom no-repeat}
+.main_content h3{ font-size:1em; line-height:25px; color:#66542a; text-shadow: 1px 1px 0 #FFF}
+.box_output{display:block; border:1px solid #CECCCC; height:90px; margin-top:15px}	
+.btn_login{
+	display:block;
+	width:149px;
+	height:40px;
+	margin:29px auto 20px auto;
+	background:url(../images/btn_login.png) no-repeat;
+	border:none;
+	cursor:pointer;
+	font-size:0.813em;
+	color:#FFF;
+	text-align:center;
+	letter-spacing:2px}	
+.btn_login:hover{ background:url(../images/btn_login.png) 0 -40px no-repeat}	
