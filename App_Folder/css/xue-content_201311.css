@@ -29,6 +29,9 @@ image{border:0}
 
 header{
 	display:block;
+	position:fixed;
+	z-index:8010;
+	top:0;
 	width:100%;
 	height:48px;
 	background:url(../images/bg_topbar.png) repeat-x}
@@ -150,26 +153,40 @@ a.btn_gray:hover{
 
 .table-bg{
 	display:block;
+	/*min-height:1500px;*/
 	font-size:0.813em; 
 	line-height:22px; 
 	color:#140d0a;
 	background:#FFF;
-	margin-top:20px;
+	margin-top:120px/*20px*/;
 	padding:10px;
 	-webkit-box-shadow: 0 0 10px #e2e2e2;
 	-moz-box-shadow: 0 0 10px #e2e2e2;
 	-o-box-shadow: 0 0 10px #e2e2e2;
 	-ms-box-shadow: 0 0 10px #e2e2e2;
 	box-shadow: 0 0 10px #e2e2e2}
-.mytable_search{margin-bottom:20px}
-.mytable_search th{
+.mytable_search, .mytable_list, .mytable_info{margin-bottom:20px}
+.mytable_list{ border-collapse: separate; border-spacing: 1px}
+.mytable_info{ font-size:0.813em; line-height:22px}
+.mytable_search th, .mytable_list th, .mytable_info th{
+	text-shadow: 1px 1px 0 #F2E4C2;
 	vertical-align:middle; 
     height:33px; 
 	padding:5px; 
-	background:url(../images/bg_th.png) repeat-x}	
-.mytable_search td{
+	background:url(../images/bg_th.png) repeat-x}
+.mytable_search td, .mytable_list td{
 	padding:8px 5px;
 	border-bottom:1px dashed #dfdddd}
+.mytable_list td{ text-align:center; vertical-align:middle}
+.mytable_info td{
+	padding:8px 5px;
+	border-bottom:1px dashed #dfdddd; 
+    text-align:left; 
+	vertical-align:middle}
+.mytable_list .even{background:#EFEEEE}
+.mytable_list .highlight {background:#F6DFA8}
+.mytable_list .selected {background:#EDB93D; color:#140d0a}
+	
 .tdr{ width:70px; text-align:right}	
 .btmc{ display:block; width:28px; margin:0 auto}
 .mytxtarea{
@@ -186,5 +203,51 @@ a.btn_gray:hover{
 	-o-box-shadow: 0 0 10px #EDB93D;
 	-ms-box-shadow: 0 0 10px #EDB93D;
 	box-shadow: 0 0 10px #EDB93D}
+.w15{ width:15px}
+.w60{ width:60px}
 .w160{ width:160px}
-.w350{ width:350px}					
+.w350{ width:350px}
+.w420{ width:490px}
+
+.page_title{
+	display:block;
+	position: fixed;
+	z-index:8010;
+	top:48px;
+	width:93.5%; 
+	height:50px; 
+	background: url(../images/bg_content.png);
+	padding-top:20px}
+.lay-left{
+	display:block;
+	float:left;
+	width:50%}
+.lay-right{
+	display:block;
+	float:right;
+	width:50%;
+	padding:0 0 20px 0}
+.lay-right li{
+	display:inline-block;
+	float:right;
+	font-size:0.813em;
+	line-height:22px;
+	text-align:right}
+.btn_view, .btn_edit{ display:inline-block; width:18px; height:18px; text-indent:-9999px; margin-left:5px}
+.btn_view{ background: url(../images/btn_info.png) no-repeat}
+.btn_view:hover{ background: url(../images/btn_info.png) -18px 0 no-repeat}
+.btn_edit{ background: url(../images/btn_info.png) 0 -18px no-repeat}
+.btn_edit:hover{ background: url(../images/btn_info.png) -18px -18px no-repeat}
+
+#box_search, #box_add, #box_view, #box_edit{ display: none; width:650px}
+#box_search{font-size:0.813em; line-height:22px}
+
+/*頁碼*/
+.sabrosus{ float:left; padding: 3px; margin:10px 3px; font-size:0.813em; text-align: center}
+.sabrosus a{border: #b2b2b2 1px solid; padding:2px 5px; color: #140d0a; margin-right: 5px; text-decoration: none; background:#FFF}
+.sabrosus a:hover{border: #b2b2b2 1px solid; color:#140d0a; background-color: #f3ce75}
+.pagination a:active{border: #b2b2b2 1px solid;  color: #140d0a; background-color:#fff}
+.sabrosus span.current{border: #b2b2b2 1px solid; padding:2px 5px; font-weight: bold; color: #140d0a; margin-right: 5px; background-color: #f3ce75}
+.sabrosus span.disabled{border: #b2b2b2 1px solid; padding:2px 5px; color: #929292; margin-right: 5px}
+.addup{ float:right; font-size:0.813em; line-height:22px; margin:10px 3px}
+.addup span{ font-size:1.125em; font-weight:bold; color:#BE9533; padding:0 10px}							
