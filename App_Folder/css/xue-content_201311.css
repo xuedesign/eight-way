@@ -150,6 +150,7 @@ a.btn_gray:hover{
 .main_content{
 	display:block;
 	width:93%;
+	width:96% !important;
 	min-height:510px;
 	margin:30px auto;
 	background:url(../images/bg_content-logo.png) right bottom no-repeat}
@@ -197,7 +198,7 @@ a.btn_gray:hover{
 	-ms-box-shadow: 0 0 10px #e2e2e2;
 	box-shadow: 0 0 10px #e2e2e2}
 .mytable_search, .mytable_list, .mytable_info{margin-bottom:20px}
-.mytable_list{ border-collapse: separate; border-spacing: 1px}
+.mytable_list, .mytable_info{ border-collapse: separate; border-spacing: 1px}
 .mytable_info{ font-size:0.813em; line-height:22px}
 .mytable_search th, .mytable_list th, .mytable_info th{
 	text-shadow: 1px 1px 0 #F2E4C2;
@@ -247,7 +248,7 @@ a.btn_gray:hover{
 	position: fixed;
 	z-index:8010;
 	top:48px;
-	width:93.5%; 
+	width:97%/*93.5%*/; 
 	height:50px; 
 	background: url(../images/bg_content.png);
 	padding-top:20px}
@@ -285,4 +286,26 @@ a.btn_gray:hover{
 .sabrosus span.current{border: #b2b2b2 1px solid; padding:2px 5px; font-weight: bold; color: #140d0a; margin-right: 5px; background-color: #f3ce75}
 .sabrosus span.disabled{border: #b2b2b2 1px solid; padding:2px 5px; color: #929292; margin-right: 5px}
 .addup{ float:right; font-size:0.813em; line-height:22px; margin:10px 3px}
-.addup span{ font-size:1.125em; font-weight:bold; color:#BE9533; padding:0 10px}							
+.addup span{ font-size:1.125em; font-weight:bold; color:#BE9533; padding:0 10px}
+
+.check_ok, .check_none{
+	display:block;
+	width:16px;
+	height:16px;
+	text-indent:-9999px;
+	margin:0 auto}
+.check_ok{ background:url(../images/icon_check.png) no-repeat}
+.check_none{ background:url(../images/icon_check.png) 0 -16px no-repeat}
+#vtip { 
+    display: none; 
+	position: absolute; 
+	padding: 10px; 
+	left: 5px; 
+	font-size: 0.813em; 
+	background-color: white; 
+	border: 1px solid #FE992F; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	z-index: 9999}
+.vtip{cursor:pointer; font-weight:bold; color:#C00}	
+#vtip #vtipArrow { display:none /*position: absolute; top: -10px; left: 5px*/ }							
