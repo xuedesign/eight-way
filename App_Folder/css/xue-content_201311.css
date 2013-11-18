@@ -197,10 +197,11 @@ a.btn_gray:hover{
 	-o-box-shadow: 0 0 10px #e2e2e2;
 	-ms-box-shadow: 0 0 10px #e2e2e2;
 	box-shadow: 0 0 10px #e2e2e2}
-.mytable_search, .mytable_list, .mytable_info{margin-bottom:20px}
-.mytable_list, .mytable_info{ border-collapse: separate; border-spacing: 1px}
-.mytable_info{ font-size:0.813em; line-height:22px}
-.mytable_search th, .mytable_list th, .mytable_info th{
+.mytable_search, .mytable_list, .mytable_info, .mytable_orderlist, .mytable_addprod{margin-bottom:20px}
+.mytable_list, .mytable_info, .mytable_orderlist{ border-collapse: separate; border-spacing: 1px}
+.mytable_info{font-size:0.813em; line-height:22px}
+.table-bg .mytable_info{font-size:1em; line-height:22px}
+.mytable_search th, .mytable_list th, .mytable_info th, .mytable_orderlist th{
 	text-shadow: 1px 1px 0 #F2E4C2;
 	vertical-align:middle; 
     height:33px; 
@@ -215,9 +216,32 @@ a.btn_gray:hover{
 	border-bottom:1px dashed #dfdddd; 
     text-align:left; 
 	vertical-align:middle}
+.mytable_orderlist td{
+	padding:8px 5px;
+	border-bottom:1px dashed #dfdddd; 
+    text-align: center; 
+	vertical-align:middle}
+.mytable_orderlist .mytxtarea{width:60px \9; *width:60px; _width:60px}	
+@media screen and (min-width: 768px) and (max-width: 1279px){
+	.mytable_orderlist .mytxtarea{ width:60px}}	 
+@media screen and (min-width: 1280px) {
+	.mytable_addprod .mytxtarea{ width:100px}}	
 .mytable_list .even{background:#EFEEEE}
 .mytable_list .highlight {background:#F6DFA8}
 .mytable_list .selected {background:#EDB93D; color:#140d0a}
+
+.mytable_addprod{ background:#E7E7E7}
+.mytable_addprod th{ 
+     padding:5px 0; 
+	 background:#CACACA; 
+	 border-top:1px solid #FFF; 
+	 border-bottom:1px solid #FFF}
+.mytable_addprod td{
+	padding:5px;
+	border-bottom:1px solid #fff; 
+    text-align: center; 
+	vertical-align:middle}
+
 	
 .tdr{ width:70px; text-align:right}	
 .btmc{ display:block; width:28px; margin:0 auto}
@@ -237,6 +261,7 @@ a.btn_gray:hover{
 	box-shadow: 0 0 10px #EDB93D}
 .w15{ width:15px}
 .w60{ width:60px}
+.w85{ width:85px}
 .w100{ width:100px}
 .w160{ width:160px}
 .w200{ width:200px}
@@ -272,6 +297,16 @@ a.btn_gray:hover{
 .btn_view:hover{ background: url(../images/btn_info.png) -18px 0 no-repeat}
 .btn_edit{ background: url(../images/btn_info.png) 0 -18px no-repeat}
 .btn_edit:hover{ background: url(../images/btn_info.png) -18px -18px no-repeat}
+.btn_del{
+	display:block;
+	width:18px;
+	height:18px;
+	border:none;
+	background:url(../images/btn_info.png) 0 -36px no-repeat;
+	cursor:pointer;
+	text-indent:-9999px;
+	margin:0 auto}
+.btn_del:hover{ background:url(../images/btn_info.png) -18px -36px no-repeat;}
 
 #box_search, #box_add, #box_view, #box_edit{ display: none; width:650px}
 #box_search{font-size:0.813em; line-height:22px}

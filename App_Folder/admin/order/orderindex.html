@@ -265,13 +265,14 @@
     <br class="clean" />  
     
     
-    <!-- LightBox 區塊說明：目前有二個隱藏區塊，"#box_search"是搜尋區塊，"#box_view"檢視產品資料 -->
+    <!-- LightBox 區塊說明：目前有三個隱藏區塊，"#box_search"是搜尋區塊，"#box_view"檢視產品資料, "#box_add"是新增訂單資料-->
       <link href="http://code.jquery.com/ui/jquery-ui-git.css" rel="stylesheet"/>
 	  <script src="http://code.jquery.com/ui/jquery-ui-git.js"></script>
       <script>
          $(function() {
           $( "#startDate" ).datepicker();
           $( "#dueDate" ).datepicker();
+		  $( "#orderDate" ).datepicker();
          });
       </script>   
     <div id="box_search"><!-- 搜尋區塊 -->
@@ -290,8 +291,7 @@
             </tr>
             <tr>
               <td class="tdr">訂貨狀態：</td>
-              <td><!--<input id="prodType" name="prodType" type="text" class="mytxtarea w350">-->
-                  <select class="mytxtarea w350">
+              <td><select class="mytxtarea w350">
                      <option selected>請選擇</option>
                      <option>審核</option>
                      <option>未審核</option>
@@ -325,17 +325,17 @@
           </tr>
           <tr>
             <td>客戶代號：</td>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w160" value="2042" disabled></td>
+            <td><input id="AccNo" name="AccNo" type="text" class="mytxtarea w160" value="2042" disabled></td>
             <td>客戶名稱：</td>
-            <td><input id="pdName" name="pdName" type="text" class="mytxtarea w160" value="苗栗公館店" disabled></td>
+            <td><input id="AccName" name="AccName" type="text" class="mytxtarea w160" value="苗栗公館店" disabled></td>
           </tr>
           <tr>
             <td>訂購日期：</td>
-            <td colspan="3"><input id="Price" name="Price" type="text" class="mytxtarea w160" value="2013/11/15" disabled></td>
+            <td colspan="3"><input id="OrderDate" name="OrderDate" type="text" class="mytxtarea w160" value="2013/11/15" disabled></td>
           </tr>
           <tr>
             <td>備註：</td>
-            <td colspan="3"><textarea id="notes" name="notes" cols="58" rows="3"  class="mytxtarea" disabled>&nbsp;</textarea></td>
+            <td colspan="3"><textarea id="Ps" name="Ps" cols="58" rows="3"  class="mytxtarea" disabled>&nbsp;</textarea></td>
           </tr>
         </table>
         
@@ -350,31 +350,31 @@
             <th>備註</th>
           </tr>
           <tr>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w60" value="101" disabled></td>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w60" value="菜肉餡" disabled></td>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w60" value="袋" disabled></td>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w60" value="55" disabled></td>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w60" value="10" disabled></td>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w60" value="550" disabled></td>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w60" value="" disabled></td>
+            <td><input id="prodNo" name="prodNo" type="text" class="mytxtarea w60" value="101" disabled></td>
+            <td><input id="prodName" name="prodName" type="text" class="mytxtarea w60" value="菜肉餡" disabled></td>
+            <td><input id="unit" name="unit" type="text" class="mytxtarea w60" value="袋" disabled></td>
+            <td><input id="price" name="price" type="text" class="mytxtarea w60" value="55" disabled></td>
+            <td><input id="count" name="count" type="text" class="mytxtarea w60" value="10" disabled></td>
+            <td><input id="total" name="total" type="text" class="mytxtarea w60" value="550" disabled></td>
+            <td><input id="ps" name="ps" type="text" class="mytxtarea w60" value="" disabled></td>
           </tr>
           <tr>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w60" value="101" disabled></td>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w60" value="菜肉餡" disabled></td>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w60" value="袋" disabled></td>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w60" value="55" disabled></td>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w60" value="10" disabled></td>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w60" value="550" disabled></td>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w60" value="" disabled></td>
+            <td><input id="prodNo" name="prodNo" type="text" class="mytxtarea w60" value="101" disabled></td>
+            <td><input id="prodName" name="prodName" type="text" class="mytxtarea w60" value="菜肉餡" disabled></td>
+            <td><input id="unit" name="unit" type="text" class="mytxtarea w60" value="袋" disabled></td>
+            <td><input id="price" name="price" type="text" class="mytxtarea w60" value="55" disabled></td>
+            <td><input id="count" name="count" type="text" class="mytxtarea w60" value="10" disabled></td>
+            <td><input id="total" name="total" type="text" class="mytxtarea w60" value="550" disabled></td>
+            <td><input id="ps" name="ps" type="text" class="mytxtarea w60" value="" disabled></td>
           </tr>
           <tr>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w60" value="101" disabled></td>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w60" value="菜肉餡" disabled></td>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w60" value="袋" disabled></td>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w60" value="55" disabled></td>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w60" value="10" disabled></td>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w60" value="550" disabled></td>
-            <td><input id="pdId" name="pdId" type="text" class="mytxtarea w60" value="" disabled></td>
+            <td><input id="prodNo" name="prodNo" type="text" class="mytxtarea w60" value="101" disabled></td>
+            <td><input id="prodName" name="prodName" type="text" class="mytxtarea w60" value="菜肉餡" disabled></td>
+            <td><input id="unit" name="unit" type="text" class="mytxtarea w60" value="袋" disabled></td>
+            <td><input id="price" name="price" type="text" class="mytxtarea w60" value="55" disabled></td>
+            <td><input id="count" name="count" type="text" class="mytxtarea w60" value="10" disabled></td>
+            <td><input id="total" name="total" type="text" class="mytxtarea w60" value="550" disabled></td>
+            <td><input id="ps" name="ps" type="text" class="mytxtarea w60" value="" disabled></td>
           </tr>
         </table>
         </form>
@@ -384,6 +384,27 @@
           <li><a href="orderedit.html" title="編輯" class="mybtn btn_gray">編輯</a></li>
        </ul>
        <br class="clean"/>
+    </div>
+    
+    <div id="box_add"><!-- 新增區塊 -->
+       <form action="" method="post">
+           <table width="100%" class="mytable_info">
+            <tr>
+              <th colspan="2">新增訂單作業</th>
+            </tr>
+            <tr>
+              <td>客戶代號：</td>
+              <td><input id="custNo" name="custNo" type="text" class="mytxtarea w350"></td>
+            </tr>
+            <tr>
+              <td>訂單日期：</td>
+              <td><input id="orderDate" name="orderDate" type="text" class="mytxtarea w350"></td>
+            </tr>
+          </table>
+          <div class="down_btn">
+            <input name="" type="button" class="btn_gray-02" value="新增" onclick="javascript:location.href='orderedit.html';">
+          </div>
+      </form>  
     </div>
         
 <!-- InstanceEndEditable -->
