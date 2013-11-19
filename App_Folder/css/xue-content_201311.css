@@ -197,20 +197,20 @@ a.btn_gray:hover{
 	-o-box-shadow: 0 0 10px #e2e2e2;
 	-ms-box-shadow: 0 0 10px #e2e2e2;
 	box-shadow: 0 0 10px #e2e2e2}
-.mytable_search, .mytable_list, .mytable_info, .mytable_orderlist, .mytable_addprod{margin-bottom:20px}
+.mytable_search, .mytable_search-02, .mytable_list, .mytable_info, .mytable_orderlist, .mytable_addprod{margin-bottom:20px}
 .mytable_list, .mytable_info, .mytable_orderlist{ border-collapse: separate; border-spacing: 1px}
 .mytable_info{font-size:0.813em; line-height:22px}
 .table-bg .mytable_info{font-size:1em; line-height:22px}
-.mytable_search th, .mytable_list th, .mytable_info th, .mytable_orderlist th{
+.mytable_search th, .mytable_search-02 th, .mytable_list th, .mytable_info th, .mytable_orderlist th{
 	text-shadow: 1px 1px 0 #F2E4C2;
 	vertical-align:middle; 
     height:33px; 
 	padding:5px; 
 	background:url(../images/bg_th.png) repeat-x}
-.mytable_search td, .mytable_list td{
+.mytable_search td, .mytable_search-02 td, .mytable_list td{
 	padding:8px 5px;
 	border-bottom:1px dashed #dfdddd}
-.mytable_list td{ text-align:center; vertical-align:middle}
+.mytable_list td, .mytable_search-02 td{ text-align:center; vertical-align:middle}
 .mytable_info td{
 	padding:8px 5px;
 	border-bottom:1px dashed #dfdddd; 
@@ -277,21 +277,24 @@ a.btn_gray:hover{
 	height:50px; 
 	background: url(../images/bg_content.png);
 	padding-top:20px}
-.lay-left{
+.lay-left, .lay-left-02{
 	display:block;
 	float:left;
 	width:50%}
-.lay-right{
+.lay-right, .lay-right-02{
 	display:block;
 	float:right;
-	width:50%;
-	padding:0 0 20px 0}
+	width:50%}
+.lay-right{padding:0 0 20px 0}
+.lay-right-02{padding:0 0 10px 0; text-align:right}	
 .lay-right li{
 	display:inline-block;
 	float:right;
 	font-size:0.813em;
 	line-height:22px;
 	text-align:right}
+.lay-left-02 span, .lay-right-02 span{ font-weight:bold; color:#DA7F20; padding-left:5px; letter-spacing:1px}
+	
 .btn_view, .btn_edit{ display:inline-block; width:18px; height:18px; text-indent:-9999px; margin-left:5px}
 .btn_view{ background: url(../images/btn_info.png) no-repeat}
 .btn_view:hover{ background: url(../images/btn_info.png) -18px 0 no-repeat}
