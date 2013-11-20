@@ -152,24 +152,34 @@
        
     <link href="http://code.jquery.com/ui/jquery-ui-git.css" rel="stylesheet"/>
 	  <script src="http://code.jquery.com/ui/jquery-ui-git.js"></script>
-      <script>
+      <script src="http://mybidrobot.allalla.com/jquery/jquery.ui.datepicker-zh-TW.js"></script>
+	  <script>
          $(function() {
-          $( "#startDate" ).datepicker();
-          $( "#dueDate" ).datepicker();
-		  $( "#orderDate" ).datepicker();
-         });
-      </script>
+         $( "#startDate" ).datepicker({
+         showOn: "button",
+         buttonImage: "../../images/calendar.gif",
+         buttonImageOnly: true
+          });
+         $( "#dueDate" ).datepicker({
+         showOn: "button",
+         buttonImage: "../../images/calendar.gif",
+         buttonImageOnly: true
+          });
+		});
+      </script>	
     <div id="box_search"><!-- 搜尋區塊 -->
        <form action="" method="post">
-           <table width="100%" class="mytable_search-02">
+           <table width="100%" class="mytable_search">
             <tr>
               <th colspan="2">訂購統計表查詢</th>
             </tr>
             <tr>
-              <td class="tdr">訂購日期：<input id="startDate" name="startDate" type="text" class="mytxtarea w160"> ~ <input id="dueDate" name="dueDate" type="text" class="mytxtarea w160"></td>
+              <td>訂購日期：</td>
+              <td><input id="startDate" name="startDate" type="text" class="mytxtarea w160"> ~ <input id="dueDate" name="dueDate" type="text" class="mytxtarea w160"></td>
             </tr>
             <tr>
-              <td class="tdr">客戶代號：<input id="custRangeStart" name="custRangeStart" type="text" class="mytxtarea w160"> ~ <input id="custRangeEnd" name="custRangeEnd" type="text" class="mytxtarea w160"></td>
+              <td>客戶代號：</td>
+              <td><input id="custRangeStart" name="custRangeStart" type="text" class="mytxtarea w160"> ~ <input id="custRangeEnd" name="custRangeEnd" type="text" class="mytxtarea w160"></td>
             </tr>
           </table>
           <div class="down_btn">

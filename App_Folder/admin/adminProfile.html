@@ -1,10 +1,313 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="zh-tw"><!-- InstanceBegin template="/Templates/page_temp.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
-<meta charset="utf-8">
-<title>無標題文件</title>
+<meta charset="utf-8" lang="zh-tw">
+<meta name="Author" content="e-innovator" />
+<link rel="shortcut icon"  href="images/favicon.ico"/>
+<link rel="icon" href="images/favicon.ico"/>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>::八方雲集進銷存管理系統::</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="../css/reset.css" />
+<link rel="stylesheet" href="../css/xue-content_201311.css"/>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
 </head>
 
 <body>
+<header>
+   <div class="btn_hide">
+     <span id="leftFrame_display">隱藏選單</span>
+     <input type="hidden" name="left_staus" id="left_staus" value="打開">
+   </div>  
+   <div class="box_loginfo">
+      歡迎登入，騰冠科技
+      <a href="#" title="登出" class="mybtn btn_red">登出</a>
+   </div>
+</header>
+
+
+<section class="main_content">
+<!-- InstanceBeginEditable name="main_content" -->
+  
+  <div class="page_title">
+      <h3 class="lay-left">管理者帳號設定</h3>
+      <ul class="lay-right">
+         <li><a href="#box_add" title="新增管理者" class="mybtn btn_gray fancybox">新增</a></li>
+      </ul>
+  </div>
+   
+  
+  <link rel="stylesheet" href="../css/jquery.fancybox.css"><!-- lightbox效果 -->
+  <script src="../scripts/jquery.fancybox.pack.js"></script><!-- lightbox效果 -->
+  <script src="../scripts/web_set.js"></script><!-- 綜合效果 -->
+  <div class="table-bg clean">
+    <table width="100%" id="menager_list" class="mytable_list-02">
+      <thead>
+        <tr>
+          <th>帳號</th>
+          <th>產品資料</th>
+          <th>客戶資料</th>
+          <th>訂單資料</th>
+          <th>設定管理權限</th>
+          <th>刪除</th>
+        </tr>
+      </thead>
+      <tbody>   
+        <tr>
+          <td><a href="#box_edit" title="編輯權限" class="fancybox">Abel Tsai</a></td>
+          <td>
+             <ul class="checklist">
+               <li><span class="check_ok">允許</span>新增</li>
+               <li><span class="check_ok">允許</span>修改</li>
+               <li><span class="check_ok">允許</span>刪除</li>
+             </ul>
+          </td>
+          <td>
+             <ul class="checklist">
+               <li><span class="check_ok">允許</span>新增</li>
+               <li><span class="check_none">不允許</span>修改</li>
+               <li><span class="check_ok">允許</span>刪除</li>
+             </ul>
+          </td>
+          <td>
+             <ul class="checklist">
+               <li><span class="check_none">不允許</span>新增</li>
+               <li><span class="check_ok">允許</span>修改</li>
+               <li><span class="check_ok">允許</span>刪除</li>
+             </ul>
+          </td>
+          <td>
+             <ul class="checklist">
+               <li><span class="check_ok">允許</span></li>
+             </ul>
+          </td>
+          <td><input name="" type="button" class="btn_del" value="刪除"></td>
+        </tr>
+        
+        
+        <tr>
+          <td><a href="#box_edit" title="編輯權限" class="fancybox">Elmo Wu</a></td>
+          <td>
+             <ul class="checklist">
+               <li><span class="check_ok">允許</span>新增</li>
+               <li><span class="check_none">不允許</span>修改</li>
+               <li><span class="check_ok">允許</span>刪除</li>
+             </ul>
+          </td>
+          <td>
+             <ul class="checklist">
+               <li><span class="check_none">不允許</span>新增</li>
+               <li><span class="check_none">不允許</span>修改</li>
+               <li><span class="check_none">不允許</span>刪除</li>
+             </ul>
+          </td>
+          <td>
+             <ul class="checklist">
+               <li><span class="check_ok">允許</span>新增</li>
+               <li><span class="check_ok">允許</span>修改</li>
+               <li><span class="check_ok">允許</span>刪除</li>
+             </ul>
+          </td>
+          <td>
+             <ul class="checklist">
+               <li><span class="check_none">不允許</span></li>
+             </ul>
+          </td>
+          <td><input name="" type="button" class="btn_del" value="刪除"></td>
+        </tr>
+        
+        
+        <tr>
+          <td><a href="#box_edit" title="編輯權限" class="fancybox">Abel Tsai</a></td>
+          <td>
+             <ul class="checklist">
+               <li><span class="check_ok">允許</span>新增</li>
+               <li><span class="check_ok">允許</span>修改</li>
+               <li><span class="check_ok">允許</span>刪除</li>
+             </ul>
+          </td>
+          <td>
+             <ul class="checklist">
+               <li><span class="check_ok">允許</span>新增</li>
+               <li><span class="check_none">不允許</span>修改</li>
+               <li><span class="check_ok">允許</span>刪除</li>
+             </ul>
+          </td>
+          <td>
+             <ul class="checklist">
+               <li><span class="check_none">不允許</span>新增</li>
+               <li><span class="check_ok">允許</span>修改</li>
+               <li><span class="check_ok">允許</span>刪除</li>
+             </ul>
+          </td>
+          <td>
+             <ul class="checklist">
+               <li><span class="check_ok">允許</span></li>
+             </ul>
+          </td>
+          <td><input name="" type="button" class="btn_del" value="刪除"></td>
+        </tr>
+        
+        
+        <tr>
+          <td><a href="#box_edit" title="編輯權限" class="fancybox">Elmo Wu</a></td>
+          <td>
+             <ul class="checklist">
+               <li><span class="check_ok">允許</span>新增</li>
+               <li><span class="check_none">不允許</span>修改</li>
+               <li><span class="check_ok">允許</span>刪除</li>
+             </ul>
+          </td>
+          <td>
+             <ul class="checklist">
+               <li><span class="check_none">不允許</span>新增</li>
+               <li><span class="check_none">不允許</span>修改</li>
+               <li><span class="check_none">不允許</span>刪除</li>
+             </ul>
+          </td>
+          <td>
+             <ul class="checklist">
+               <li><span class="check_ok">允許</span>新增</li>
+               <li><span class="check_ok">允許</span>修改</li>
+               <li><span class="check_ok">允許</span>刪除</li>
+             </ul>
+          </td>
+          <td>
+             <ul class="checklist">
+               <li><span class="check_none">不允許</span></li>
+             </ul>
+          </td>
+          <td><input name="" type="button" class="btn_del" value="刪除"></td>
+        </tr>
+        
+       </tbody>
+      </table>
+    </div>
+    
+    <div class="sabrosus"><!-- 頁碼組 -->
+        <span class="disabled">上一頁</span>
+        <span class="current">1</span><!-- span class="current"為目前頁面數 -->
+        <a href="#?page=2" title="第2頁">2</a>
+        <a href="#?page=3" title="第3頁">3</a>
+        <a href="#?page=4" title="第4頁">4</a>
+        <a href="#?page=5" title="第5頁">5</a>
+        <a href="#?page=6" title="第6頁">6</a>
+        <a href="#?page=7" title="第7頁">7</a>
+        <a href="#?page=2" title="下一頁">下一頁</a>
+    </div>
+    <p class="addup">共<span>9999</span>筆資料</p>
+    <br class="clean" />  
+    
+    
+    <div id="box_add"><!-- 新增區塊 -->
+       <form action="" method="post">
+           <table width="100%" class="mytable_info">
+            <tr>
+              <th colspan="2">管理權限設定</th>
+            </tr>
+            <tr>
+              <td class="tdr-02">使用者帳號：</td>
+              <td><input id="username" name="username" type="text" class="mytxtarea w200" value=""></td>
+            </tr>
+            <tr>
+              <td class="tdr-02">使用者密碼：</td>
+              <td><input id="password" name="password" type="password" class="mytxtarea w200" value=""></td>
+            </tr>
+            <tr>
+              <td class="tdr-02">產品資料管理：</td>
+              <td>
+                  <input name="add" type="checkbox" value="1001">新增
+                  <input name="edit" type="checkbox" value="1002">修改
+                  <input name="delete" type="checkbox" value="1003">刪除
+              </td>
+            </tr>
+            <tr>
+              <td class="tdr-02">客戶資料管理：</td>
+              <td>
+                  <input name="add" type="checkbox" value="2001">新增
+                  <input name="edit" type="checkbox" value="2002">修改
+                  <input name="delete" type="checkbox" value="2003">刪除
+              </td>
+            </tr>
+            <tr>
+              <td class="tdr-02">訂單資料管理：</td>
+              <td>
+                  <input name="add" type="checkbox" value="3001">新增
+                  <input name="edit" type="checkbox" value="3002">修改
+                  <input name="delete" type="checkbox" value="3003">刪除
+              </td>
+            </tr>
+            <tr>
+              <td class="tdr-02">帳號權限設定：</td>
+              <td><input name="yes" type="checkbox" value="4001">允許</td>
+            </tr>
+          </table>
+          <div class="down_btn">
+            <input name="" type="button" class="btn_gray-02" value="確定" onclick="javascript:location.href='adminProfile.html';">
+          </div>
+      </form>  
+    </div>
+    
+    
+    <div id="box_edit"><!-- 搜尋區塊 -->
+       <form action="" method="post">
+           <table width="100%" class="mytable_info">
+            <tr>
+              <th colspan="2">管理權限設定</th>
+            </tr>
+            <tr>
+              <td class="tdr-02">使用者帳號：</td>
+              <td><input id="username" name="username" type="text" class="mytxtarea w200" value="Abel Tsai" disabled></td>
+            </tr>
+            <tr>
+              <td class="tdr-02">使用者密碼：</td>
+              <td><input id="password" name="password" type="password" class="mytxtarea w200" value="123456"></td>
+            </tr>
+            <tr>
+              <td class="tdr-02">產品資料管理：</td>
+              <td>
+                  <input name="add" type="checkbox" value="1001" checked>新增
+                  <input name="edit" type="checkbox" value="1002" checked>修改
+                  <input name="delete" type="checkbox" value="1003">刪除
+              </td>
+            </tr>
+            <tr>
+              <td class="tdr-02">客戶資料管理：</td>
+              <td>
+                  <input name="add" type="checkbox" value="2001" checked>新增
+                  <input name="edit" type="checkbox" value="2002" checked>修改
+                  <input name="delete" type="checkbox" value="2003" checked>刪除
+              </td>
+            </tr>
+            <tr>
+              <td class="tdr-02">訂單資料管理：</td>
+              <td>
+                  <input name="add" type="checkbox" value="3001">新增
+                  <input name="edit" type="checkbox" value="3002" checked>修改
+                  <input name="delete" type="checkbox" value="3003">刪除
+              </td>
+            </tr>
+            <tr>
+              <td class="tdr-02">帳號權限設定：</td>
+              <td><input name="yes" type="checkbox" value="4001" checked>允許</td>
+            </tr>
+          </table>
+          <div class="down_btn">
+            <input name="" type="button" class="btn_gray-02" value="確定" onclick="javascript:location.href='adminProfile.html';">
+          </div>
+      </form>  
+    </div>
+    
+   
+<!-- InstanceEndEditable -->
+</section>
+
+
+<script src="../scripts/hide_show.js"></script><!-- 隱藏選單 -->
 </body>
-</html>
+<!-- InstanceEnd --></html>

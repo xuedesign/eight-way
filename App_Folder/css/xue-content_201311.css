@@ -139,9 +139,7 @@ a.btn_gray:hover{
 	background-color: #dc454c; 
 	color:#fff;
 	text-decoration:none;
-	border:1px solid #aa0e15}		
-
-				
+	border:1px solid #aa0e15}				
 
 
 /* 2. 內頁板型  
@@ -197,20 +195,26 @@ a.btn_gray:hover{
 	-o-box-shadow: 0 0 10px #e2e2e2;
 	-ms-box-shadow: 0 0 10px #e2e2e2;
 	box-shadow: 0 0 10px #e2e2e2}
-.mytable_search, .mytable_search-02, .mytable_list, .mytable_info, .mytable_orderlist, .mytable_addprod{margin-bottom:20px}
-.mytable_list, .mytable_info, .mytable_orderlist{ border-collapse: separate; border-spacing: 1px}
+.mytable_search, .mytable_search-02, .mytable_list, .mytable_list-02, .mytable_info, .mytable_orderlist, .mytable_addprod{margin-bottom:20px}
+.mytable_list, .mytable_list-02, .mytable_info, .mytable_orderlist{ border-collapse: separate; border-spacing: 1px}
 .mytable_info{font-size:0.813em; line-height:22px}
 .table-bg .mytable_info{font-size:1em; line-height:22px}
-.mytable_search th, .mytable_search-02 th, .mytable_list th, .mytable_info th, .mytable_orderlist th{
+.mytable_search th, .mytable_search-02 th, .mytable_list th, .mytable_list-02 th, .mytable_info th, .mytable_orderlist th{
 	text-shadow: 1px 1px 0 #F2E4C2;
 	vertical-align:middle; 
     height:33px; 
 	padding:5px; 
 	background:url(../images/bg_th.png) repeat-x}
-.mytable_search td, .mytable_search-02 td, .mytable_list td{
+.mytable_search td, .mytable_list td, .mytable_list-02 td{
 	padding:8px 5px;
 	border-bottom:1px dashed #dfdddd}
-.mytable_list td, .mytable_search-02 td{ text-align:center; vertical-align:middle}
+.mytable_list td, .mytable_list-02 td{ text-align:center; vertical-align:middle}
+.mytable_search-02 td{
+	padding:8px 5px;
+	border-bottom:1px dashed #dfdddd;
+	text-align:center;
+	vertical-align:middle}
+.mytable_search-02 .pdlf35{ padding-left:35px}		
 .mytable_info td{
 	padding:8px 5px;
 	border-bottom:1px dashed #dfdddd; 
@@ -226,9 +230,18 @@ a.btn_gray:hover{
 	.mytable_orderlist .mytxtarea{ width:60px}}	 
 @media screen and (min-width: 1280px) {
 	.mytable_addprod .mytxtarea{ width:100px}}	
-.mytable_list .even{background:#EFEEEE}
-.mytable_list .highlight {background:#F6DFA8}
-.mytable_list .selected {background:#EDB93D; color:#140d0a}
+.mytable_list .even, .mytable_list-02 tr:nth-child(odd){background:#EFEEEE}
+.mytable_list .highlight, .mytable_list-02 tr:hover{background:#F6DFA8}
+.mytable_list .selected, .mytable_list-02 .selected{background:#EDB93D; color:#140d0a}
+
+.mytable_list-02 a:link, .mytable_list-02 a:visited{ 
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1.125em;
+	font-weight:bold; 
+	line-height:22px; 
+	text-decoration:none;
+	color:#000}
+.mytable_list-02 a:hover{ text-decoration:underline;}
 
 .mytable_addprod{ background:#E7E7E7}
 .mytable_addprod th{ 
@@ -243,11 +256,13 @@ a.btn_gray:hover{
 	vertical-align:middle}
 
 	
-.tdr{ width:70px; text-align:right}	
+.tdr{ width:70px; text-align:right}
+.mytable_info .tdr-02{ width:19%;}		
 .btmc{ display:block; width:28px; margin:0 auto}
 .mytxtarea{
 	border:1px solid #A2A1A1;
 	padding:5px 8px;
+	margin-right:5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-o-border-radius: 5px;
@@ -346,4 +361,7 @@ a.btn_gray:hover{
 	-webkit-border-radius: 5px; 
 	z-index: 9999}
 .vtip{cursor:pointer; font-weight:bold; color:#C00}	
-#vtip #vtipArrow { display:none /*position: absolute; top: -10px; left: 5px*/ }							
+#vtip #vtipArrow { display:none /*position: absolute; top: -10px; left: 5px*/ }
+
+.checklist{}
+.checklist li{display:inline-block; padding:2px 5px}

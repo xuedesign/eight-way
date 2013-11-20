@@ -163,13 +163,21 @@
        
     <link href="http://code.jquery.com/ui/jquery-ui-git.css" rel="stylesheet"/>
 	  <script src="http://code.jquery.com/ui/jquery-ui-git.js"></script>
-      <script>
+      <script src="http://mybidrobot.allalla.com/jquery/jquery.ui.datepicker-zh-TW.js"></script>
+	  <script>
          $(function() {
-          $( "#startDate" ).datepicker();
-          $( "#dueDate" ).datepicker();
-		  $( "#orderDate" ).datepicker();
-         });
-      </script>
+         $( "#startDate" ).datepicker({
+         showOn: "button",
+         buttonImage: "../../images/calendar.gif",
+         buttonImageOnly: true
+          });
+         $( "#dueDate" ).datepicker({
+         showOn: "button",
+         buttonImage: "../../images/calendar.gif",
+         buttonImageOnly: true
+          });
+		});
+      </script>	
     <div id="box_search"><!-- 搜尋區塊 -->
        <form action="" method="post">
            <table width="100%" class="mytable_search-02">
@@ -177,7 +185,7 @@
               <th colspan="2">客戶未訂貨單查詢</th>
             </tr>
             <tr>
-              <td class="tdr">日期查詢：<input id="startDate" name="startDate" type="text" class="mytxtarea w160"> ~ <input id="dueDate" name="dueDate" type="text" class="mytxtarea w160"></td>
+              <td>日期查詢：<input id="startDate" name="startDate" type="text" class="mytxtarea w160"> ~ <input id="dueDate" name="dueDate" type="text" class="mytxtarea w160"></td>
             </tr>
           </table>
           <div class="down_btn">
