@@ -153,7 +153,8 @@ a.btn_gray:hover{
 	margin:30px auto;
 	background:url(../images/bg_content-logo.png) right bottom no-repeat}
 .main_content h3{ font-size:1em; line-height:25px; color:#66542a; text-shadow: 1px 1px 0 #FFF}
-.box_output{display:block; border:1px solid #CECCCC; height:90px; margin-top:15px}	
+.box_output{display:block; border:1px solid #CECCCC; height:90px; margin-top:15px}
+.box_output h4{ text-align:center; letter-spacing:1px; padding-top:35px}	
 .btn_login{
 	display:block;
 	width:149px;
@@ -181,20 +182,20 @@ a.btn_gray:hover{
 	letter-spacing:2px}	
 .btn_send:hover{ background:url(../images/btn_gray.png) 0 -23px no-repeat}
 
-.table-bg{
+.table-bg, .table-bg-02{
 	display:block;
 	/*min-height:1500px;*/
 	font-size:0.813em; 
 	line-height:22px; 
 	color:#140d0a;
 	background:#FFF;
-	margin-top:120px/*20px*/;
 	padding:10px;
 	-webkit-box-shadow: 0 0 10px #e2e2e2;
 	-moz-box-shadow: 0 0 10px #e2e2e2;
 	-o-box-shadow: 0 0 10px #e2e2e2;
 	-ms-box-shadow: 0 0 10px #e2e2e2;
 	box-shadow: 0 0 10px #e2e2e2}
+.table-bg{margin-top:120px/*20px*/;}	
 .mytable_search, .mytable_search-02, .mytable_list, .mytable_list-02, .mytable_info, .mytable_orderlist, .mytable_addprod{margin-bottom:20px}
 .mytable_list, .mytable_list-02, .mytable_info, .mytable_orderlist{ border-collapse: separate; border-spacing: 1px}
 .mytable_info{font-size:0.813em; line-height:22px}
@@ -280,6 +281,7 @@ a.btn_gray:hover{
 .w100{ width:100px}
 .w160{ width:160px}
 .w200{ width:200px}
+.w250{ width:250px}
 .w350{ width:350px}
 .w420{ width:490px}
 
@@ -365,3 +367,35 @@ a.btn_gray:hover{
 
 .checklist{}
 .checklist li{display:inline-block; padding:2px 5px}
+
+
+.box_chk{ display: inline-table; float:right; text-align:right}
+.chk{ vertical-align: middle; margin-right:5px}
+.abgne_tab{ display:block; margin-top:120px}
+.tabs{
+	width: 100%;
+	height: 32px}
+.tabs li {
+	float: left;
+	height: 31px;
+	line-height: 31px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: -1px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+	border-left: none;
+	background: #e1e1e1;
+	-webkit-box-shadow: 1px -2px 10px #e2e2e2;
+	-moz-box-shadow: 1px -2px 10px #e2e2e2;
+	-o-box-shadow: 1px -2px 10px #e2e2e2;
+	-ms-box-shadow: 1px -2px 10px #e2e2e2;
+	box-shadow: 1px -2px 10px #e2e2e2}
+.tabs li a {
+	display: block;
+	padding: 0 20px;
+	font-size:0.813em;
+	color: #000;
+	text-decoration: none}
+.tabs li a:hover{ background: #ccc}
+.tabs li.active { background: #fff; border-bottom: 1px solid #fff}
+.tabs li.active a:hover{ background: #fff}
+#tab2{ display:block; min-height:300px}
