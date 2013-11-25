@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+<meta charset="utf-8" lang="zh-tw">
+<meta name="Author" content="e-innovator" />
+<link rel="shortcut icon"  href="../images/favicon.ico"/>
+<link rel="icon" href="../images/favicon.ico"/>
+<title>::八方雲集進銷存管理系統::</title>
+<link rel="stylesheet" href="../../css/reset.css" />
+<link rel="stylesheet" href="../../css/xue-content_201311.css"/>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<section class="main_content-02">
+
+<div class="page_title-02">
+     <span class="top_line"></span>
+     <div class="topbox">
+       <h3 class="lay-left">編輯訂單作業</h3>
+        <ul class="lay-right">
+            <li><input name="" type="button" class="btn_gray-02" value="列印"></li>
+            <li><input name="" type="button" class="btn_gray-02" value="取消" onclick="javascript:location.href='orderedit.html';"></li>
+            <li><input name="" type="button" class="btn_gray-02" value="儲存"></li>
+        </ul>
+     </div>   
+  </div>
+  
+  <div class="subpage">
+  <div class="table-bg-03 clean">
+      <table width="100%" class="mytable_info">
+          <tr>
+            <th colspan="6">客戶基本資料</th>
+          </tr>
+          <tr>
+            <td class="w85">客戶代號：</td>
+            <td class="w200"><input id="AccNo" name="AccNo" type="text" class="mytxtarea w160" value="2042"></td>
+            <td class="w85">客戶名稱：</td>
+            <td><input id="AccName" name="AccName" type="text" class="mytxtarea w160" value="苗栗公館店"></td>
+          </tr>
+          <tr>
+            <td>訂購日期：</td>
+            <td colspan="3"><input id="OrderDate2" name="OrderDate2" type="text" class="mytxtarea w160" value="2013/11/15"></td>
+          </tr>
+          <tr>
+            <td>備註：</td>
+            <td colspan="3"><textarea id="Ps" name="Ps" cols="58" rows="3"  class="mytxtarea">&nbsp;</textarea></td>
+          </tr>
+        </table>
+        
+        
+        <table width="100%" class="mytable_orderlist"><!-- 訂單明細列表 -->
+          <tr>
+            <th>產品代號</th>
+            <th>產品名稱</th>
+            <th>單位</th>
+            <th>單價</th>
+            <th>數量</th>
+            <th>金額小計</th>
+            <th>備註</th>
+            <th>刪除</th>
+          </tr>
+          <tr>
+            <td><input id="prodNo" name="prodNo" type="text" class="mytxtarea" value="101"></td>
+            <td><input id="prodName" name="prodName" type="text" class="mytxtarea" value="菜肉餡"></td>
+            <td><input id="unit" name="unit" type="text" class="mytxtarea" value="袋"></td>
+            <td><input id="price" name="price" type="text" class="mytxtarea" value="55"></td>
+            <td><input id="count" name="count" type="text" class="mytxtarea" value="10"></td>
+            <td><input id="total" name="total" type="text" class="mytxtarea" value="550"></td>
+            <td><input id="ps" name="ps" type="text" class="mytxtarea" value=""></td>
+            <td><input name="" type="button" class="btn_del" value="刪除"></td>
+          </tr>
+          <tr>
+            <td><input id="prodNo" name="prodNo" type="text" class="mytxtarea" value="101"></td>
+            <td><input id="prodName" name="prodName" type="text" class="mytxtarea" value="菜肉餡"></td>
+            <td><input id="unit" name="unit" type="text" class="mytxtarea" value="袋"></td>
+            <td><input id="price" name="price" type="text" class="mytxtarea" value="55"></td>
+            <td><input id="count" name="count" type="text" class="mytxtarea" value="10"></td>
+            <td><input id="total" name="total" type="text" class="mytxtarea" value="550"></td>
+            <td><input id="ps" name="ps" type="text" class="mytxtarea" value=""></td>
+            <td><input name="" type="button" class="btn_del" value="刪除"></td>
+          </tr>
+          <tr>
+            <td><input id="prodNo" name="prodNo" type="text" class="mytxtarea" value="101"></td>
+            <td><input id="prodName" name="prodName" type="text" class="mytxtarea" value="菜肉餡"></td>
+            <td><input id="unit" name="unit" type="text" class="mytxtarea" value="袋"></td>
+            <td><input id="price" name="price" type="text" class="mytxtarea" value="55"></td>
+            <td><input id="count" name="count" type="text" class="mytxtarea" value="10"></td>
+            <td><input id="total" name="total" type="text" class="mytxtarea" value="550"></td>
+            <td><input id="ps" name="ps" type="text" class="mytxtarea" value=""></td>
+            <td><input name="" type="button" class="btn_del" value="刪除"></td>
+          </tr>
+        </table>
+        
+        <form action="" method="post"><!-- 訂單新增表單 -->
+          <table width="100%" class="mytable_addprod">
+            <tr>
+              <th colspan="7">新增訂單產品</th>
+            </tr>
+            <tr>
+              <td>產品代號</td>
+              <td>產品名稱</td>
+              <td>單位</td>
+              <td>單價</td>
+              <td>數量</td>
+              <td>金額小計</td>
+              <td>備註</td>
+            </tr>
+            <tr>
+              <td><input id="prodNo" name="prodNo" type="text" class="mytxtarea w60" value=""></td>
+              <td><input id="prodName" name="prodName" type="text" class="mytxtarea w60" value=""></td>
+              <td><input id="unit" name="unit" type="text" class="mytxtarea w60" value=""></td>
+              <td><input id="price" name="price" type="text" class="mytxtarea w60" value=""></td>
+              <td><input id="count" name="count" type="text" class="mytxtarea w60" value=""></td>
+              <td><input id="total" name="total" type="text" class="mytxtarea w60" value=""></td>
+              <td><input id="ps" name="ps" type="text" class="mytxtarea w60" value=""></td>
+            </tr>
+            <tr>
+              <td colspan="7"><input id="" name="" type="button" class="btn_gray-02" value="新增"></td>
+            </tr>
+          </table>
+        </form>
+     </div>
+  </div>            
+</section>
+
+
+<script src="../../scripts/hide_show.js"></script><!-- 隱藏選單 -->
+</body>
+</html>

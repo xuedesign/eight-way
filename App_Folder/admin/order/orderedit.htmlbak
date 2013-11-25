@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><!-- InstanceBegin template="/Templates/page_temp.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8" lang="zh-tw">
+<meta name="Author" content="e-innovator" />
+<link rel="shortcut icon"  href="../images/favicon.ico"/>
+<link rel="icon" href="../images/favicon.ico"/>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>::八方雲集進銷存管理系統::</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="../../css/reset.css" />
+<link rel="stylesheet" href="../../css/xue-content_201311.css"/>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<header>
+   <div class="btn_hide">
+     <span id="leftFrame_display">隱藏選單</span>
+     <input type="hidden" name="left_staus" id="left_staus" value="打開">
+   </div>  
+   <div class="box_loginfo">
+      歡迎登入，騰冠科技
+      <a href="#" title="登出" class="mybtn btn_red">登出</a>
+   </div>
+</header>
+
+
+<section class="main_content">
+<!-- InstanceBeginEditable name="main_content" -->
+  
+  <div class="page_title">
+      <h3 class="lay-left">編輯訂單作業</h3>
+      <ul class="lay-right">
+          <li><input name="" type="button" class="btn_gray-02" value="列印"></li>
+          <li><a href="#box_search" title="搜尋訂單" class="mybtn btn_gray fancybox">搜尋</a></li>
+          <li><input name="" type="button" class="btn_gray-02" value="刪除" disabled></li>
+          <li><a href="#box_add" title="新增訂單" class="mybtn btn_gray fancybox">新增</a></li>
+          <li><input name="" type="button" class="btn_gray-02" value="儲存"></li>
+      </ul>
+  </div>
+  
+  <link rel="stylesheet" href="../../css/jquery.fancybox.css"><!-- lightbox效果 -->
+  <script src="../../scripts/jquery.fancybox.pack.js"></script><!-- lightbox效果 -->
+  <!--[if lt IE 9]>
+     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+  <script src="../../scripts/web_set.js"></script><!-- 綜合效果 --> 
+  <div class="table-bg clean">
+      <table width="100%" class="mytable_info">
+          <tr>
+            <th colspan="6">客戶基本資料</th>
+          </tr>
+          <tr>
+            <td class="w85">客戶代號：</td>
+            <td class="w200"><input id="AccNo" name="AccNo" type="text" class="mytxtarea w160" value="2042"></td>
+            <td class="w85">客戶名稱：</td>
+            <td><input id="AccName" name="AccName" type="text" class="mytxtarea w160" value="苗栗公館店"></td>
+          </tr>
+          <tr>
+            <td>訂購日期：</td>
+            <td colspan="3"><input id="OrderDate2" name="OrderDate2" type="text" class="mytxtarea w160" value="2013/11/15"></td>
+          </tr>
+          <tr>
+            <td>備註：</td>
+            <td colspan="3"><textarea id="Ps" name="Ps" cols="58" rows="3"  class="mytxtarea">&nbsp;</textarea></td>
+          </tr>
+        </table>
+        
+        <form action="" method="post"><!-- 訂單新增表單 -->
+          <table width="100%" class="mytable_addprod">
+            <tr>
+              <th colspan="7">新增訂單產品</th>
+            </tr>
+            <tr>
+              <td>產品代號</td>
+              <td>產品名稱</td>
+              <td>單位</td>
+              <td>單價</td>
+              <td>數量</td>
+              <td>金額小計</td>
+              <td>備註</td>
+            </tr>
+            <tr>
+              <td><input id="prodNo" name="prodNo" type="text" class="mytxtarea w60" value=""></td>
+              <td><input id="prodName" name="prodName" type="text" class="mytxtarea w60" value=""></td>
+              <td><input id="unit" name="unit" type="text" class="mytxtarea w60" value=""></td>
+              <td><input id="price" name="price" type="text" class="mytxtarea w60" value=""></td>
+              <td><input id="count" name="count" type="text" class="mytxtarea w60" value=""></td>
+              <td><input id="total" name="total" type="text" class="mytxtarea w60" value=""></td>
+              <td><input id="ps" name="ps" type="text" class="mytxtarea w60" value=""></td>
+            </tr>
+            <tr>
+              <td colspan="7"><input id="" name="" type="button" class="btn_gray-02" value="新增"></td>
+            </tr>
+          </table>
+        </form>
+                
+        <table width="100%" class="mytable_orderlist"><!-- 訂單明細列表 -->
+          <tr>
+            <th>產品代號</th>
+            <th>產品名稱</th>
+            <th>單位</th>
+            <th>單價</th>
+            <th>數量</th>
+            <th>金額小計</th>
+            <th>備註</th>
+            <th>刪除</th>
+          </tr>
+          <tr>
+            <td><input id="prodNo" name="prodNo" type="text" class="mytxtarea" value="101"></td>
+            <td><input id="prodName" name="prodName" type="text" class="mytxtarea" value="菜肉餡"></td>
+            <td><input id="unit" name="unit" type="text" class="mytxtarea" value="袋"></td>
+            <td><input id="price" name="price" type="text" class="mytxtarea" value="55"></td>
+            <td><input id="count" name="count" type="text" class="mytxtarea" value="10"></td>
+            <td><input id="total" name="total" type="text" class="mytxtarea" value="550"></td>
+            <td><input id="ps" name="ps" type="text" class="mytxtarea" value=""></td>
+            <td><input name="" type="button" class="btn_del" value="刪除"></td>
+          </tr>
+          <tr>
+            <td><input id="prodNo" name="prodNo" type="text" class="mytxtarea" value="101"></td>
+            <td><input id="prodName" name="prodName" type="text" class="mytxtarea" value="菜肉餡"></td>
+            <td><input id="unit" name="unit" type="text" class="mytxtarea" value="袋"></td>
+            <td><input id="price" name="price" type="text" class="mytxtarea" value="55"></td>
+            <td><input id="count" name="count" type="text" class="mytxtarea" value="10"></td>
+            <td><input id="total" name="total" type="text" class="mytxtarea" value="550"></td>
+            <td><input id="ps" name="ps" type="text" class="mytxtarea" value=""></td>
+            <td><input name="" type="button" class="btn_del" value="刪除"></td>
+          </tr>
+          <tr>
+            <td><input id="prodNo" name="prodNo" type="text" class="mytxtarea" value="101"></td>
+            <td><input id="prodName" name="prodName" type="text" class="mytxtarea" value="菜肉餡"></td>
+            <td><input id="unit" name="unit" type="text" class="mytxtarea" value="袋"></td>
+            <td><input id="price" name="price" type="text" class="mytxtarea" value="55"></td>
+            <td><input id="count" name="count" type="text" class="mytxtarea" value="10"></td>
+            <td><input id="total" name="total" type="text" class="mytxtarea" value="550"></td>
+            <td><input id="ps" name="ps" type="text" class="mytxtarea" value=""></td>
+            <td><input name="" type="button" class="btn_del" value="刪除"></td>
+          </tr>
+        </table>
+  </div>
+  
+  <!-- LightBox 區塊說明：目前有兩個隱藏區塊，"#box_search"是搜尋區塊, "#box_add"是新增訂單資料-->
+      <link href="http://code.jquery.com/ui/jquery-ui-git.css" rel="stylesheet"/>
+	  <script src="http://code.jquery.com/ui/jquery-ui-git.js"></script>
+      <script src="http://mybidrobot.allalla.com/jquery/jquery.ui.datepicker-zh-TW.js"></script>
+	  <script>
+         $(function() {
+         $( "#startDate" ).datepicker({
+         showOn: "button",
+         buttonImage: "../../images/calendar.gif",
+         buttonImageOnly: true
+          });
+         $( "#dueDate" ).datepicker({
+         showOn: "button",
+         buttonImage: "../../images/calendar.gif",
+         buttonImageOnly: true
+          });
+		 $( "#orderDate" ).datepicker({
+         showOn: "button",
+         buttonImage: "../../images/calendar.gif",
+         buttonImageOnly: true
+          });
+		 $( "#OrderDate2" ).datepicker({
+         showOn: "button",
+         buttonImage: "../../images/calendar.gif",
+         buttonImageOnly: true
+          });
+        });
+      </script>    
+     
+     <div id="box_search"><!-- 搜尋區塊 -->
+       <form action="" method="post">
+           <table width="100%" class="mytable_search">
+            <tr>
+              <th colspan="2">訂單作業查詢</th>
+            </tr>
+            <tr>
+              <td class="tdr">訂單日期：</td>
+              <td><input id="startDate" name="startDate" type="text" class="mytxtarea w160"> ~ <input id="dueDate" name="dueDate" type="text" class="mytxtarea w160"></td>
+            </tr>
+            <tr>
+              <td class="tdr">客戶代號：</td>
+              <td><input id="custRangeStart" name="custRangeStart" type="text" class="mytxtarea w160"> ~ <input id="custRangeEnd" name="custRangeEnd" type="text" class="mytxtarea w160"></td>
+            </tr>
+            <tr>
+              <td class="tdr">訂貨狀態：</td>
+              <td><select class="mytxtarea w350">
+                     <option selected>請選擇</option>
+                     <option>審核</option>
+                     <option>未審核</option>
+                     <option>正常</option>
+                     <option>055以下</option>
+                     <option>055~0.6</option>
+                     <option>0.6以上</option>
+                     <option>錯誤代碼</option>
+                  </select>
+              </td>
+            </tr>
+          </table>
+          <div class="down_btn">
+            <input name="" type="button" class="btn_gray-02" value="確定" onclick="javascript:location.href='orderindex.html';">
+          </div>
+      </form>  
+    </div>
+    
+    <div id="box_add"><!-- 新增區塊 -->
+       <form action="" method="post">
+           <table width="100%" class="mytable_info">
+            <tr>
+              <th colspan="2">新增訂單作業</th>
+            </tr>
+            <tr>
+              <td>客戶代號：</td>
+              <td><input id="custNo" name="custNo" type="text" class="mytxtarea w350"></td>
+            </tr>
+            <tr>
+              <td>訂單日期：</td>
+              <td><input id="orderDate" name="orderDate" type="text" class="mytxtarea w350"></td>
+            </tr>
+          </table>
+          <div class="down_btn">
+            <input name="" type="button" class="btn_gray-02" value="新增" onclick="javascript:location.href='orderedit.html';">
+          </div>
+      </form>  
+    </div>
+            
+<!-- InstanceEndEditable -->
+</section>
+
+
+<script src="../../scripts/hide_show.js"></script><!-- 隱藏選單 -->
+</body>
+<!-- InstanceEnd --></html>

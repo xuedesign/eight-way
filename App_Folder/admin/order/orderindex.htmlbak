@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><!-- InstanceBegin template="/Templates/page_temp.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8" lang="zh-tw">
+<meta name="Author" content="e-innovator" />
+<link rel="shortcut icon"  href="../images/favicon.ico"/>
+<link rel="icon" href="../images/favicon.ico"/>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>::八方雲集進銷存管理系統::</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="../../css/reset.css" />
+<link rel="stylesheet" href="../../css/xue-content_201311.css"/>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<header>
+   <div class="btn_hide">
+     <span id="leftFrame_display">隱藏選單</span>
+     <input type="hidden" name="left_staus" id="left_staus" value="打開">
+   </div>  
+   <div class="box_loginfo">
+      歡迎登入，騰冠科技
+      <a href="#" title="登出" class="mybtn btn_red">登出</a>
+   </div>
+</header>
+
+
+<section class="main_content">
+<!-- InstanceBeginEditable name="main_content" -->
+  
+  <div class="page_title">
+      <h3 class="lay-left">訂單作業列表</h3>
+      <ul class="lay-right">
+          <li><a href="#box_search" title="搜尋訂單" class="mybtn btn_gray fancybox">搜尋</a></li>
+          <li><a href="#" title="刪除" class="mybtn btn_gray">刪除</a></li>
+          <li><a href="#box_add" title="新增訂單" class="mybtn btn_gray fancybox">新增</a></li>
+          <li><a href="#" title="儲存訂單" class="mybtn btn_gray">儲存</a></li>
+      </ul>
+  </div>
+   
+  
+  <link rel="stylesheet" href="../../css/jquery.fancybox.css"><!-- lightbox效果 -->
+  <script src="../../scripts/jquery.fancybox.pack.js"></script><!-- lightbox效果 -->
+  <script src="../../scripts/vtip-min.js"></script><!-- 提示框效果 -->
+  <script src="../../scripts/web_set.js"></script><!-- 綜合效果 -->
+  <div class="table-bg clean">
+    <table width="100%" class="mytable_list">
+      <thead>
+        <tr>
+          <th class="w15">&nbsp;</th>
+          <th>訂購日期</th>
+          <th>訂購單號</th>
+          <th>客戶代號</th>
+          <th>客戶名稱</th>
+          <th>審核</th>
+          <th>審核</th>
+          <th>訂貨狀況</th>
+          <th>餡皮比</th>
+          <th>金額</th>
+          <th>店休</th>
+          <th class="w60">明細</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>   
+        <tr>
+          <td><input name="s" type="checkbox" value=""></td>
+          <td>2013/11/15</td>
+          <td>123456</td>
+          <td>2042</td>
+          <td>苗栗公館店</td>
+          <td><span class="check_ok">已審核</span></td>
+          <td><input name="" type="button" class="btn_gray-02" value="審核"></td>
+          <td>訂貨正常</td>
+          <td>0.00</td>
+          <td>3677</td>
+          <td>週一</td>
+          <td>
+             <a href="#box_view" title="檢視訂單資料" class="btn_view fancybox">檢視</a>
+             <a href="orderedit.html" title="編輯訂單資料" class="btn_edit">編輯</a>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><input name="s" type="checkbox" value=""></td>
+          <td>2013/11/15</td>
+          <td>123456</td>
+          <td>2042</td>
+          <td>苗栗公館店</td>
+          <td><span class="check_none">未審核</span></td>
+          <td><input name="" type="button" class="btn_gray-02" value="審核"></td>
+          <td><span class="vtip" title="餛飩餡未訂<br>麵類未訂">訂貨異常</span></td><!-- 可用<br>分行 -->
+          <td>0.00</td>
+          <td>3677</td>
+          <td>週一</td>
+          <td>
+             <a href="#box_view" title="檢視訂單資料" class="btn_view fancybox">檢視</a>
+             <a href="orderedit.html" title="編輯訂單資料" class="btn_edit">編輯</a>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><input name="s" type="checkbox" value=""></td>
+          <td>2013/11/15</td>
+          <td>123456</td>
+          <td>2042</td>
+          <td>苗栗公館店</td>
+          <td><span class="check_ok">已審核</span></td>
+          <td><input name="" type="button" class="btn_gray-02" value="審核"></td>
+          <td>訂貨正常</td>
+          <td>0.00</td>
+          <td>3677</td>
+          <td>週一</td>
+          <td>
+             <a href="#box_view" title="檢視訂單資料" class="btn_view fancybox">檢視</a>
+             <a href="orderedit.html" title="編輯訂單資料" class="btn_edit">編輯</a>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><input name="s" type="checkbox" value=""></td>
+          <td>2013/11/15</td>
+          <td>123456</td>
+          <td>2042</td>
+          <td>苗栗公館店</td>
+          <td><span class="check_none">未審核</span></td>
+          <td><input name="" type="button" class="btn_gray-02" value="審核"></td>
+          <td><span class="vtip" title="餛飩餡未訂<br>麵類未訂">訂貨異常</span></td><!-- 可用<br>分行 -->
+          <td>0.00</td>
+          <td>3677</td>
+          <td>週一</td>
+          <td>
+             <a href="#box_view" title="檢視訂單資料" class="btn_view fancybox">檢視</a>
+             <a href="orderedit.html" title="編輯訂單資料" class="btn_edit">編輯</a>
+          </td>
+          <td>&nbsp;</td>
+        </tr><tr>
+          <td><input name="s" type="checkbox" value=""></td>
+          <td>2013/11/15</td>
+          <td>123456</td>
+          <td>2042</td>
+          <td>苗栗公館店</td>
+          <td><span class="check_ok">已審核</span></td>
+          <td><input name="" type="button" class="btn_gray-02" value="審核"></td>
+          <td>訂貨正常</td>
+          <td>0.00</td>
+          <td>3677</td>
+          <td>週一</td>
+          <td>
+             <a href="#box_view" title="檢視訂單資料" class="btn_view fancybox">檢視</a>
+             <a href="orderedit.html" title="編輯訂單資料" class="btn_edit">編輯</a>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><input name="s" type="checkbox" value=""></td>
+          <td>2013/11/15</td>
+          <td>123456</td>
+          <td>2042</td>
+          <td>苗栗公館店</td>
+          <td><span class="check_none">未審核</span></td>
+          <td><input name="" type="button" class="btn_gray-02" value="審核"></td>
+          <td><span class="vtip" title="餛飩餡未訂<br>麵類未訂">訂貨異常</span></td><!-- 可用<br>分行 -->
+          <td>0.00</td>
+          <td>3677</td>
+          <td>週一</td>
+          <td>
+             <a href="#box_view" title="檢視訂單資料" class="btn_view fancybox">檢視</a>
+             <a href="orderedit.html" title="編輯訂單資料" class="btn_edit">編輯</a>
+          </td>
+          <td>&nbsp;</td>
+        </tr><tr>
+          <td><input name="s" type="checkbox" value=""></td>
+          <td>2013/11/15</td>
+          <td>123456</td>
+          <td>2042</td>
+          <td>苗栗公館店</td>
+          <td><span class="check_ok">已審核</span></td>
+          <td><input name="" type="button" class="btn_gray-02" value="審核"></td>
+          <td>訂貨正常</td>
+          <td>0.00</td>
+          <td>3677</td>
+          <td>週一</td>
+          <td>
+             <a href="#box_view" title="檢視訂單資料" class="btn_view fancybox">檢視</a>
+             <a href="orderedit.html" title="編輯訂單資料" class="btn_edit">編輯</a>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><input name="s" type="checkbox" value=""></td>
+          <td>2013/11/15</td>
+          <td>123456</td>
+          <td>2042</td>
+          <td>苗栗公館店</td>
+          <td><span class="check_none">未審核</span></td>
+          <td><input name="" type="button" class="btn_gray-02" value="審核"></td>
+          <td><span class="vtip" title="餛飩餡未訂<br>麵類未訂">訂貨異常</span></td><!-- 可用<br>分行 -->
+          <td>0.00</td>
+          <td>3677</td>
+          <td>週一</td>
+          <td>
+             <a href="#box_view" title="檢視訂單資料" class="btn_view fancybox">檢視</a>
+             <a href="orderedit.html" title="編輯訂單資料" class="btn_edit">編輯</a>
+          </td>
+          <td>&nbsp;</td>
+        </tr><tr>
+          <td><input name="s" type="checkbox" value=""></td>
+          <td>2013/11/15</td>
+          <td>123456</td>
+          <td>2042</td>
+          <td>苗栗公館店</td>
+          <td><span class="check_ok">已審核</span></td>
+          <td><input name="" type="button" class="btn_gray-02" value="審核"></td>
+          <td>訂貨正常</td>
+          <td>0.00</td>
+          <td>3677</td>
+          <td>週一</td>
+          <td>
+             <a href="#box_view" title="檢視訂單資料" class="btn_view fancybox">檢視</a>
+             <a href="orderedit.html" title="編輯訂單資料" class="btn_edit">編輯</a>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><input name="s" type="checkbox" value=""></td>
+          <td>2013/11/15</td>
+          <td>123456</td>
+          <td>2042</td>
+          <td>苗栗公館店</td>
+          <td><span class="check_none">未審核</span></td>
+          <td><input name="" type="button" class="btn_gray-02" value="審核"></td>
+          <td><span class="vtip" title="餛飩餡未訂<br>麵類未訂">訂貨異常</span></td><!-- 可用<br>分行 -->
+          <td>0.00</td>
+          <td>3677</td>
+          <td>週一</td>
+          <td>
+             <a href="#box_view" title="檢視訂單資料" class="btn_view fancybox">檢視</a>
+             <a href="orderedit.html" title="編輯訂單資料" class="btn_edit">編輯</a>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+       </tbody>
+      </table>
+    </div>
+    
+    <div class="sabrosus"><!-- 頁碼組 -->
+        <span class="disabled">上一頁</span>
+        <span class="current">1</span><!-- span class="current"為目前頁面數 -->
+        <a href="#?page=2" title="第2頁">2</a>
+        <a href="#?page=3" title="第3頁">3</a>
+        <a href="#?page=4" title="第4頁">4</a>
+        <a href="#?page=5" title="第5頁">5</a>
+        <a href="#?page=6" title="第6頁">6</a>
+        <a href="#?page=7" title="第7頁">7</a>
+        <a href="#?page=2" title="下一頁">下一頁</a>
+    </div>
+    <p class="addup">共<span>9999</span>筆資料</p>
+    <br class="clean" />  
+    
+    
+    <!-- LightBox 區塊說明：目前有三個隱藏區塊，"#box_search"是搜尋區塊，"#box_view"檢視產品資料, "#box_add"是新增訂單資料-->
+      <link href="http://code.jquery.com/ui/jquery-ui-git.css" rel="stylesheet"/>
+	  <script src="http://code.jquery.com/ui/jquery-ui-git.js"></script>
+      <script src="http://mybidrobot.allalla.com/jquery/jquery.ui.datepicker-zh-TW.js"></script>
+	  <script>
+         $(function() {
+         $( "#startDate" ).datepicker({
+         showOn: "button",
+         buttonImage: "../../images/calendar.gif",
+         buttonImageOnly: true
+          });
+         $( "#dueDate" ).datepicker({
+         showOn: "button",
+         buttonImage: "../../images/calendar.gif",
+         buttonImageOnly: true
+          });
+		  $( "#orderDate" ).datepicker({
+         showOn: "button",
+         buttonImage: "../../images/calendar.gif",
+         buttonImageOnly: true
+          });
+        });
+      </script> 
+    <div id="box_search"><!-- 搜尋區塊 -->
+       <form action="" method="post">
+           <table width="100%" class="mytable_search">
+            <tr>
+              <th colspan="2">訂單作業查詢</th>
+            </tr>
+            <tr>
+              <td class="tdr">訂單日期：</td>
+              <td><input id="startDate" name="startDate" type="text" class="mytxtarea w160"> ~ <input id="dueDate" name="dueDate" type="text" class="mytxtarea w160"></td>
+            </tr>
+            <tr>
+              <td class="tdr">客戶代號：</td>
+              <td><input id="custRangeStart" name="custRangeStart" type="text" class="mytxtarea w160"> ~ <input id="custRangeEnd" name="custRangeEnd" type="text" class="mytxtarea w160"></td>
+            </tr>
+            <tr>
+              <td class="tdr">訂貨狀態：</td>
+              <td><select class="mytxtarea w350">
+                     <option selected>請選擇</option>
+                     <option>審核</option>
+                     <option>未審核</option>
+                     <option>正常</option>
+                     <option>055以下</option>
+                     <option>055~0.6</option>
+                     <option>0.6以上</option>
+                     <option>錯誤代碼</option>
+                  </select>
+              </td>
+            </tr>
+          </table>
+          <div class="down_btn">
+            <input name="" type="button" class="btn_gray-02" value="確定" onclick="javascript:location.href='orderindex.html';">
+          </div>
+      </form>  
+    </div>
+    
+    <div id="box_view"><!-- 檢視區塊 -->
+       <h3 class="lay-left">檢視訂單資料</h3>
+       <ul class="lay-right">
+          <li><a href="orderindex.html" title="刪除" class="mybtn btn_gray">刪除</a></li>
+          <li><a href="orderedit.html" title="編輯" class="mybtn btn_gray">編輯</a></li>
+       </ul>
+       <br class="clean"/>
+       
+       <form action="" method="post">
+       <table width="100%" class="mytable_info">
+          <tr>
+            <th colspan="6">客戶基本資料</th>
+          </tr>
+          <tr>
+            <td>客戶代號：</td>
+            <td><input id="AccNo" name="AccNo" type="text" class="mytxtarea w160" value="2042" disabled></td>
+            <td>客戶名稱：</td>
+            <td><input id="AccName" name="AccName" type="text" class="mytxtarea w160" value="苗栗公館店" disabled></td>
+          </tr>
+          <tr>
+            <td>訂購日期：</td>
+            <td colspan="3"><input id="OrderDate" name="OrderDate" type="text" class="mytxtarea w160" value="2013/11/15" disabled></td>
+          </tr>
+          <tr>
+            <td>備註：</td>
+            <td colspan="3"><textarea id="Ps" name="Ps" cols="58" rows="3"  class="mytxtarea" disabled>&nbsp;</textarea></td>
+          </tr>
+        </table>
+        
+        <table width="100%" class="mytable_info">
+          <tr>
+            <th>產品代號</th>
+            <th>產品名稱</th>
+            <th>單位</th>
+            <th>單價</th>
+            <th>數量</th>
+            <th>金額小計</th>
+            <th>備註</th>
+          </tr>
+          <tr>
+            <td><input id="prodNo" name="prodNo" type="text" class="mytxtarea w60" value="101" disabled></td>
+            <td><input id="prodName" name="prodName" type="text" class="mytxtarea w60" value="菜肉餡" disabled></td>
+            <td><input id="unit" name="unit" type="text" class="mytxtarea w60" value="袋" disabled></td>
+            <td><input id="price" name="price" type="text" class="mytxtarea w60" value="55" disabled></td>
+            <td><input id="count" name="count" type="text" class="mytxtarea w60" value="10" disabled></td>
+            <td><input id="total" name="total" type="text" class="mytxtarea w60" value="550" disabled></td>
+            <td><input id="ps" name="ps" type="text" class="mytxtarea w60" value="" disabled></td>
+          </tr>
+          <tr>
+            <td><input id="prodNo" name="prodNo" type="text" class="mytxtarea w60" value="101" disabled></td>
+            <td><input id="prodName" name="prodName" type="text" class="mytxtarea w60" value="菜肉餡" disabled></td>
+            <td><input id="unit" name="unit" type="text" class="mytxtarea w60" value="袋" disabled></td>
+            <td><input id="price" name="price" type="text" class="mytxtarea w60" value="55" disabled></td>
+            <td><input id="count" name="count" type="text" class="mytxtarea w60" value="10" disabled></td>
+            <td><input id="total" name="total" type="text" class="mytxtarea w60" value="550" disabled></td>
+            <td><input id="ps" name="ps" type="text" class="mytxtarea w60" value="" disabled></td>
+          </tr>
+          <tr>
+            <td><input id="prodNo" name="prodNo" type="text" class="mytxtarea w60" value="101" disabled></td>
+            <td><input id="prodName" name="prodName" type="text" class="mytxtarea w60" value="菜肉餡" disabled></td>
+            <td><input id="unit" name="unit" type="text" class="mytxtarea w60" value="袋" disabled></td>
+            <td><input id="price" name="price" type="text" class="mytxtarea w60" value="55" disabled></td>
+            <td><input id="count" name="count" type="text" class="mytxtarea w60" value="10" disabled></td>
+            <td><input id="total" name="total" type="text" class="mytxtarea w60" value="550" disabled></td>
+            <td><input id="ps" name="ps" type="text" class="mytxtarea w60" value="" disabled></td>
+          </tr>
+        </table>
+        </form>
+        
+        <ul class="lay-right">
+          <li><a href="orderindex.html" title="刪除" class="mybtn btn_gray">刪除</a></li>
+          <li><a href="orderedit.html" title="編輯" class="mybtn btn_gray">編輯</a></li>
+       </ul>
+       <br class="clean"/>
+    </div>
+    
+    <div id="box_add"><!-- 新增區塊 -->
+       <form action="" method="post">
+           <table width="100%" class="mytable_info">
+            <tr>
+              <th colspan="2">新增訂單作業</th>
+            </tr>
+            <tr>
+              <td>客戶代號：</td>
+              <td><input id="custNo" name="custNo" type="text" class="mytxtarea w350"></td>
+            </tr>
+            <tr>
+              <td>訂單日期：</td>
+              <td><input id="orderDate" name="orderDate" type="text" class="mytxtarea w350"></td>
+            </tr>
+          </table>
+          <div class="down_btn">
+            <input name="" type="button" class="btn_gray-02" value="新增" onclick="javascript:location.href='orderedit.html';">
+          </div>
+      </form>  
+    </div>
+        
+<!-- InstanceEndEditable -->
+</section>
+
+
+<script src="../../scripts/hide_show.js"></script><!-- 隱藏選單 -->
+</body>
+<!-- InstanceEnd --></html>
