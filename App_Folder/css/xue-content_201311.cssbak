@@ -43,14 +43,14 @@ header{
 	background:url(../images/icon_hidden.png) no-repeat;
 	margin:10px 0 0 15px;
 	padding-left:32px;}	
-#leftFrame_display{ cursor:pointer; font-size:1em; line-height:27px; *line-height:22px; color:#FFF}	
+#leftFrame_display{ cursor:pointer; font-size:0.813em; line-height:27px; *line-height:22px; color:#FFF}	
 
 .box_loginfo{
 	display:block;
 	float:right;
 	text-align:right;
 	margin:10px 15px 0 0;
-	font-size:1em;
+	font-size:0.813em;
 	line-height:22px;
 	color:#FFF}
 .mybtn{
@@ -125,7 +125,6 @@ a.btn_gray:hover{
 	background: -ms-linear-gradient(top, #c3c2c2, #898888);
 	background: linear-gradient(top, #c3c2c2, #898888);
 	background-color: #c3c2c2;
-	font-size:1em;
 	color:#fff;
 	text-decoration:none;
 	border:1px solid #898888;
@@ -165,7 +164,7 @@ a.btn_gray:hover{
 	background:url(../images/btn_login.png) no-repeat;
 	border:none;
 	cursor:pointer;
-	font-size:1em;
+	font-size:0.813em;
 	color:#FFF;
 	text-align:center;
 	letter-spacing:2px}	
@@ -178,7 +177,7 @@ a.btn_gray:hover{
 	background:url(../images/btn_gray.png) no-repeat;
 	border:none;
 	cursor:pointer;
-	font-size:1em;
+	font-size:0.813em;
 	color:#FFF;
 	text-align:center;
 	letter-spacing:2px}	
@@ -187,7 +186,7 @@ a.btn_gray:hover{
 .table-bg, .table-bg-02, .table-bg-03{
 	display:block;
 	/*min-height:1500px;*/
-	font-size:1em; 
+	font-size:0.813em; 
 	line-height:22px; 
 	color:#140d0a;
 	background:#FFF;
@@ -201,7 +200,7 @@ a.btn_gray:hover{
 .table-bg-03{ margin-top:80px}	
 .mytable_search, .mytable_search-02, .mytable_list, .mytable_list-02, .mytable_info, .mytable_orderlist, .mytable_addprod{margin-bottom:20px}
 .mytable_list, .mytable_list-02, .mytable_info, .mytable_orderlist{ border-collapse: separate; border-spacing: 1px}
-.mytable_info{font-size:1em; line-height:22px}
+.mytable_info{font-size:0.813em; line-height:22px}
 .table-bg .mytable_info, .table-bg-03 .mytable_info{font-size:1em; line-height:22px}
 .mytable_search th, .mytable_search-02 th, .mytable_list th, .mytable_list-02 th, .mytable_info th, .mytable_orderlist th{
 	text-shadow: 1px 1px 0 #F2E4C2;
@@ -209,7 +208,6 @@ a.btn_gray:hover{
     height:33px; 
 	padding:5px; 
 	background:url(../images/bg_th.png) repeat-x}
-.mytable_orderlist th{ font-size:0.938em}	
 .mytable_search td, .mytable_list td, .mytable_list-02 td{
 	padding:8px 5px;
 	border-bottom:1px dashed #dfdddd}
@@ -221,30 +219,27 @@ a.btn_gray:hover{
 	vertical-align:middle}
 .mytable_search-02 .pdlf35{ padding-left:35px}		
 .mytable_info td{
-	padding:8px 0/*5px*/;
+	padding:8px 5px;
 	border-bottom:1px dashed #dfdddd; 
     text-align:left; 
 	vertical-align:middle}
 .mytable_orderlist td{
-	padding:8px 0;
+	padding:8px 5px;
 	border-bottom:1px dashed #dfdddd; 
     text-align: center; 
 	vertical-align:middle}
-.mytable_orderlist .mytxtarea{width:70% \9; *width:70%; _width:70%}
-.mytable_addprod .mytxtarea{width:80% \9; *width:80%; _width:80%}		
+.mytable_orderlist .mytxtarea{width:60px \9; *width:60px; _width:60px}	
 @media screen and (min-width: 768px) and (max-width: 1279px){
-	.mytable_orderlist .mytxtarea{ width:70%}
-	.mytable_addprod .mytxtarea{ width:80%}}	 
+	.mytable_orderlist .mytxtarea{ width:60px}}	 
 @media screen and (min-width: 1280px) {
-	.mytable_addprod .mytxtarea{ width:70%}
-	.mytable_addprod .mytxtarea{ width:80%}}	
+	.mytable_addprod .mytxtarea{ width:100px}}	
 .mytable_list .even, .mytable_list-02 tr:nth-child(odd){background:#EFEEEE}
 .mytable_list .highlight, .mytable_list-02 tr:hover{background:#F6DFA8}
 .mytable_list .selected, .mytable_list-02 .selected{background:#EDB93D; color:#140d0a}
 
 .mytable_list-02 a:link, .mytable_list-02 a:visited{ 
     font-family:Arial, Helvetica, sans-serif;
-    font-size:1em/*1.125em*/;
+    font-size:1.125em;
 	font-weight:bold; 
 	line-height:22px; 
 	text-decoration:none;
@@ -264,9 +259,9 @@ a.btn_gray:hover{
 	vertical-align:middle}
 
 	
-.tdr{ width:100px/*70px*/; text-align:right}
+.tdr{ width:70px; text-align:right}
 .mytable_info .tdr-02{ width:19%;}		
-.btmc{ display:block; width:35px/*28px*/; margin:0 auto}
+.btmc{ display:block; width:28px; margin:0 auto}
 .mytxtarea{
 	border:1px solid #A2A1A1;
 	padding:5px 8px;
@@ -286,7 +281,7 @@ a.btn_gray:hover{
 .w60{ width:60px}
 .w85{ width:85px}
 .w100{ width:100px}
-.w160{ width:150px/*160px*/}
+.w160{ width:160px}
 .w200{ width:200px}
 .w250{ width:250px}
 .w350{ width:350px}
@@ -323,7 +318,7 @@ a.btn_gray:hover{
 .lay-right li{
 	display:inline-block;
 	float:right;
-	font-size:1em;
+	font-size:0.813em;
 	line-height:22px;
 	text-align:right}
 .lay-left-02 span, .lay-right-02 span{ font-weight:bold; color:#DA7F20; padding-left:5px; letter-spacing:1px}
@@ -343,21 +338,20 @@ a.btn_gray:hover{
 	text-indent:-9999px;
 	margin:0 auto}
 .btn_del:hover{ background:url(../images/btn_info.png) -18px -36px no-repeat;}
-.mytable_orderlist .btn_del{ margin:0 30px}
 
 #box_search, #box_add, #box_view, #box_edit{ display: none; width:650px}
-#box_search{font-size:1em; line-height:22px}
+#box_search{font-size:0.813em; line-height:22px}
 
 .down_btn{ display:block; text-align:center}
 
 /*頁碼*/
-.sabrosus{ float:left; padding: 3px; margin:10px 3px; font-size:1em; text-align: center}
+.sabrosus{ float:left; padding: 3px; margin:10px 3px; font-size:0.813em; text-align: center}
 .sabrosus a{border: #b2b2b2 1px solid; padding:2px 5px; color: #140d0a; margin-right: 5px; text-decoration: none; background:#FFF}
 .sabrosus a:hover{border: #b2b2b2 1px solid; color:#140d0a; background-color: #f3ce75}
 .pagination a:active{border: #b2b2b2 1px solid;  color: #140d0a; background-color:#fff}
 .sabrosus span.current{border: #b2b2b2 1px solid; padding:2px 5px; font-weight: bold; color: #140d0a; margin-right: 5px; background-color: #f3ce75}
 .sabrosus span.disabled{border: #b2b2b2 1px solid; padding:2px 5px; color: #929292; margin-right: 5px}
-.addup{ float:right; font-size:1em; line-height:22px; margin:10px 3px}
+.addup{ float:right; font-size:0.813em; line-height:22px; margin:10px 3px}
 .addup span{ font-size:1.125em; font-weight:bold; color:#BE9533; padding:0 10px}
 
 .check_ok, .check_none{
@@ -409,7 +403,7 @@ a.btn_gray:hover{
 .tabs li a {
 	display: block;
 	padding: 0 20px;
-	font-size:1em;
+	font-size:0.813em;
 	color: #000;
 	text-decoration: none}
 .tabs li a:hover{ background: #ccc}
@@ -417,19 +411,3 @@ a.btn_gray:hover{
 .tabs li.active a:hover{ background: #fff}
 #tab2{ display:block; min-height:300px}
 .top_line{display:block; width:100%; height:5px; background:#AFAFAE/*#DBDAD8*/; cursor: row-resize; margin-bottom:20px}
-
-/*2013-12-04 新增*/
-/*Chrome Firefox Opera Safari IE9+*/
-textarea:disabled{ border:none; background:none; color:#000}
-input:disabled{ border:none; background:none; color:#000; font-size:1em}
-.mytable_orderlist input:disabled{ text-align:center}
-
-
-/*IE8-*/
-textarea[disabled]{ border:none; background:none; color:#000}
-input[disabled]{ border:none; background:none; color:#000; font-size:1em}
-.mytable_orderlist input[disabled]{ text-align:center}
-
-/*IE6 Using Javascript to add CSS class "disabled"*/
-* html textarea.disabled{ border:none; background:none; color:#000}
-* html input.disabled{ border:none; background:none; color:#000; font-size:1em}
