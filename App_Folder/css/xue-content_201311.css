@@ -222,11 +222,11 @@ a.btn_gray:hover{
 .mytable_search-02 .pdlf35{ padding-left:35px}		
 .mytable_info td{
 	padding:8px 0/*5px*/;
-	border-bottom:1px dashed #dfdddd; 
-    text-align:left; 
+	border-bottom:1px dashed #dfdddd;
+	text-align:left; 
 	vertical-align:middle}
 .mytable_orderlist td{
-	padding:8px 0;
+	padding:/*8px*/0 0;
 	border-bottom:1px dashed #dfdddd; 
     text-align: center; 
 	vertical-align:middle}
@@ -282,6 +282,7 @@ a.btn_gray:hover{
 	-o-box-shadow: 0 0 10px #EDB93D;
 	-ms-box-shadow: 0 0 10px #EDB93D;
 	box-shadow: 0 0 10px #EDB93D}
+/*.mytable_info .mytxtarea{ font-size:1em}*/	
 .w15{ width:15px}
 .w60{ width:60px}
 .w85{ width:85px}
