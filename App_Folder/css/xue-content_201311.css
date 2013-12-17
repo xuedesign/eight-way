@@ -184,7 +184,7 @@ a.btn_gray:hover{
 	letter-spacing:2px}	
 .btn_send:hover{ background:url(../images/btn_gray.png) 0 -23px no-repeat}
 
-.table-bg, .table-bg-02, .table-bg-03{
+.table-bg, .table-bg-02, .table-bg-03, .table-bg-04, .table-bg-05{
 	display:block;
 	/*min-height:1500px;*/
 	font-size:1em; 
@@ -198,7 +198,10 @@ a.btn_gray:hover{
 	-ms-box-shadow: 0 0 10px #e2e2e2;
 	box-shadow: 0 0 10px #e2e2e2}
 .table-bg{margin-top:120px/*20px*/;}
-.table-bg-03{ margin-top:80px}	
+.table-bg-03{ margin-top:80px}
+.table-bg-04{ margin-top:100px}
+.table-bg-05{ margin-top:60px}	
+		
 .mytable_search, .mytable_search-02, .mytable_list, .mytable_list-02, .mytable_info, .mytable_orderlist, .mytable_addprod{margin-bottom:20px}
 .mytable_list, .mytable_list-02, .mytable_info, .mytable_orderlist{ border-collapse: separate; border-spacing: 1px}
 .mytable_info{font-size:1em; line-height:22px}
@@ -293,35 +296,45 @@ a.btn_gray:hover{
 .w350{ width:350px}
 .w420{ width:490px}
 
-.page_title{
+.page_title, .page_title-02, .page_title-03, .page_title-04{
 	display:block;
-	position: fixed;
+	position:fixed;
+	background: url(../images/bg_content.png)}
+.page_title{
 	padding-top:20px; 
 	top:48px;
 	z-index:8010;
 	width:97%/*93.5%*/; 
-	height:50px; 
-	background: url(../images/bg_content.png)}
+	height:50px}
 .page_title-02{
-	display:block;
-	position:fixed;
 	top:0;
 	z-index:8010;
 	width:100%/*93.5%*/; 
-	height:80px; 
-	background: url(../images/bg_content.png)}	
+	height:80px}
+.page_title-03{
+	padding-top:10px; 
+	top:48px;
+	z-index:8010;
+	width:97%/*93.5%*/; 
+	height:10px}
+.page_title-04{
+	top:0;
+	z-index:8010;
+	width:100%/*93.5%*/; 
+	height:50px}			
 
 .lay-left, .lay-left-02{
 	display:block;
 	float:left;
 	width:50%}
-.lay-right, .lay-right-02{
+.lay-right, .lay-right-02, .lay-right-03{
 	display:block;
 	float:right;
 	width:50%}
 .lay-right{padding:0 0 20px 0}
-.lay-right-02{padding:0 0 10px 0; text-align:right}	
-.lay-right li{
+.lay-right-02{padding:0 0 10px 0; text-align:right}
+.lay-right-03{padding:0}	
+.lay-right li, .lay-right-03 li{
 	display:inline-block;
 	float:right;
 	font-size:1em;
@@ -417,7 +430,7 @@ a.btn_gray:hover{
 .tabs li.active { background: #fff; border-bottom: 1px solid #fff}
 .tabs li.active a:hover{ background: #fff}
 #tab2{ display:block; min-height:300px}
-.top_line{display:block; width:100%; height:5px; background:#AFAFAE/*#DBDAD8*/; cursor: row-resize; margin-bottom:20px}
+.top_line{display:block; width:100%; height:5px; background:#AFAFAE/*#DBDAD8*/; cursor: row-resize; margin-bottom:10px}
 
 /*2013-12-04 新增*/
 /*Chrome Firefox Opera Safari IE9+*/
