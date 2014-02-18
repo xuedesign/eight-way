@@ -407,7 +407,7 @@ a.btn_gray:hover{
 .checklist li{display:inline-block; padding:2px 5px}
 
 
-.box_chk{ display: inline-table; float:right; text-align:right}
+.box_chk{ display: inline-table; float:left; text-align:right}
 .chk{ vertical-align: middle; margin-right:5px}
 .abgne_tab{ display:block; margin-top:120px}
 .tabs{
